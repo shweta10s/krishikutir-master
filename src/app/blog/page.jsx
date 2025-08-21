@@ -46,7 +46,7 @@ const Page = () => {
     <>
       <OtherHero name="Blog" />
 
-      <div className="pt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white">
+      <div className="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {blogPosts.slice(0, visibleCount).map((post, idx) => (
             <div key={idx} className="rounded-md overflow-hidden bg-white shadow-md flex flex-col">
