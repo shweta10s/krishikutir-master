@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+/* globals.css */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+:root {
+  --background: #fff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000; /* Dark mode background */
+    --foreground: #ffffff;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background-color: var(--background);
+  font-family: sans-serif;
+}
+
+/* Hide scrollbar but keep scroll functionality */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE & Edge */
+  scrollbar-width: none;    /* Firefox */
+}
+
+/* Color reference */
+bopsy{
+  color: #00215b;
+background: #fab731
+
+#f5b00e
+#5b851a
+#29622b
+#dfc893
+#8b4e25
+}
