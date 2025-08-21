@@ -3,75 +3,34 @@
 import React, { useState } from 'react';
 import OtherHero from '../components/other-hero';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const blogPosts = [
   {
-    date: 'March 17, 2021',
-    author: 'Mike Dooley',
-    title: 'Our 6 of the Best Organic Chocolates to Buy.',
-    imgSrc: '/background/blog-1.jpg',
-    postId: '04',
-  },
-  {
-    date: 'March 17, 2021',
-    author: 'Mike Dooley',
-    title: 'Best guide to shopping for organic ingredients.',
+    date: 'August 21, 2025',
+    title: 'Top Benefits of Microgreens in Daily Life – The Superfood You Need',
     imgSrc: '/background/blog-2.jpg',
-    postId: '02',
+    postId: '01',
+    slug: '/blog/01',
   },
   {
-    date: 'March 17, 2021',
-    author: 'Mike Dooley',
-    title: 'Zechsal Magnesium flakes especially made.',
+    date: 'August 21, 2025',
+    title: 'Microgreens: Nature’s Tiny Superfood for a Healthier You',
+    imgSrc: '/background/blog-1.jpg',
+    postId: '02',
+    slug: '/blog/02',
+  },
+  {
+    date: 'August 21, 2025',
+    title: 'How to Grow Microgreens at Home – A Simple DIY Guide',
     imgSrc: '/background/blog-3.jpg',
     postId: '03',
-  },
-  {
-    date: 'March 17, 2021',
-    author: 'Mike Dooley',
-    title: 'Healthy oils you should always cook with.',
-    imgSrc: '/background/blog-1.jpg',
-    postId: '05',
-  },
-  {
-    date: 'March 17, 2021',
-    author: 'Mike Dooley',
-    title: 'Benefits of going fully organic.',
-    imgSrc: '/background/blog-2.jpg',
-    postId: '06',
-  },
-  {
-    date: 'March 17, 2021',
-    author: 'Mike Dooley',
-    title: 'Organic gardening for beginners.',
-    imgSrc: '/background/blog-3.jpg',
-    postId: '07',
-  },
-  {
-    date: 'March 17, 2021',
-    author: 'Mike Dooley',
-    title: 'The truth about processed food.',
-    imgSrc: '/background/blog-1.jpg',
-    postId: '08',
-  },
-  {
-    date: 'March 17, 2021',
-    author: 'Mike Dooley',
-    title: 'Organic skin care: What you need to know.',
-    imgSrc: '/background/blog-2.jpg',
-    postId: '09',
-  },
-  {
-    date: 'March 17, 2021',
-    author: 'Mike Dooley',
-    title: 'How to build a chemical-free lifestyle.',
-    imgSrc: '/background/blog-3.jpg',
-    postId: '10',
+    slug: '/blog/03',
   },
 ];
 
 const Page = () => {
-  const [visibleCount, setVisibleCount] = useState(6);
+  const [visibleCount, setVisibleCount] = useState(3);
 
   const handleShowMore = () => {
     setVisibleCount(prev => Math.min(prev + 3, blogPosts.length));
@@ -87,7 +46,7 @@ const Page = () => {
     <>
       <OtherHero name="Blog" />
 
-      <div className="mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="pt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {blogPosts.slice(0, visibleCount).map((post, idx) => (
             <div key={idx} className="rounded-md overflow-hidden bg-white shadow-md flex flex-col">
@@ -102,15 +61,13 @@ const Page = () => {
 
               <div className="p-4 flex-1 flex flex-col justify-between">
                 <div>
-                  <p className="text-sm text-gray-600">
-                    {post.date} &nbsp; || &nbsp; {post.author}
-                  </p>
+                  <p className="text-sm text-gray-600">{post.date}</p>
                   <h3 className="text-base sm:text-lg font-semibold mt-2 mb-3 leading-snug text-[#000]">
                     {post.title}
                   </h3>
                 </div>
                 <div className="flex items-center justify-between text-sm text-blue-800 font-semibold border-t pt-2 border-gray-200">
-                  <span>Read more</span>
+                  <Link href={`/blog/${post.postId}`}>Read more</Link>
                   <span>{post.postId}</span>
                 </div>
               </div>
@@ -119,23 +76,25 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="text-center my-8 px-4">
-        {!isAllVisible ? (
-          <button
-            onClick={handleShowMore}
-            className="bg-[#4d7c0f] text-white px-6 py-2 rounded hover:bg-[#3f670d] transition"
-          >
-            Show More
-          </button>
-        ) : (
-          <button
-            onClick={handleShowLess}
-            className="bg-[#3f670d] text-white px-6 py-2 rounded hover:bg-[#4d7c0f] transition"
-          >
-            Show Less
-          </button>
-        )}
-      </div>
+      {blogPosts.length > 3 && (
+        <div className="text-center py-8 px-4 bg-white">
+          {!isAllVisible ? (
+            <button
+              onClick={handleShowMore}
+              className="bg-[#4d7c0f] text-white px-6 py-2 rounded hover:bg-[#3f670d] transition"
+            >
+              Show More
+            </button>
+          ) : (
+            <button
+              onClick={handleShowLess}
+              className="bg-[#3f670d] text-white px-6 py-2 rounded hover:bg-[#4d7c0f] transition"
+            >
+              Show Less
+            </button>
+          )}
+        </div>
+      )}
     </>
   );
 };

@@ -57,7 +57,7 @@ const Product = () => {
   const visibleCount = 4; // show first 4
 
   return (
-    <div className="max-w-7xl mx-auto min-h-screen py-10 text-black px-4 md:px-6 lg:px-4">
+    <div className="max-w-7xl mx-auto bg-white min-h-screen py-10 text-black px-4 md:px-6 lg:px-4">
       {/* Header */}
       <header className="w-full flex flex-col justify-center items-center text-center mb-10">
         <p className="text-[#4d7c0f] italic mb-2 text-[20px] sm:text-[24px] font-[400]">

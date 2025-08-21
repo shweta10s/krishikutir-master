@@ -81,6 +81,7 @@ export default function Gallery() {
               alt={`${active} image ${index + 1}`}
               fill
               className="object-cover"
+              loading="lazy"
             />
           </div>
         ))}
@@ -108,6 +109,7 @@ export default function Gallery() {
                 alt="Expanded"
                 fill
                 className="object-contain rounded-lg"
+                loading="lazy"
               />
             </div>
 

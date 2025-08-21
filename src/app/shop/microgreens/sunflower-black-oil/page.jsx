@@ -51,7 +51,7 @@ export default function ProductDetails() {
   ];
 
   return (
-    <>
+    <div className='w-full bg-white text-black'>
       {/* Hero */}
       <OtherHero name="Sunflower Black Oil" />
 
@@ -65,6 +65,7 @@ export default function ProductDetails() {
               alt="Sunflower Black Oil Microgreens"
               fill
               className="object-cover"
+              loading="lazy"
             />
           </div>
 
@@ -208,6 +209,7 @@ export default function ProductDetails() {
                 alt="Sunflower Microgreens Closeup"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
             <div className="relative w-full h-40 rounded-lg overflow-hidden shadow-md">
@@ -216,6 +218,7 @@ export default function ProductDetails() {
                 alt="Sunflower Microgreens on Salad"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
             <div className="relative w-full h-40 rounded-lg overflow-hidden shadow-md">
@@ -224,6 +227,7 @@ export default function ProductDetails() {
                 alt="Sunflower Microgreens Garnish"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
           </div>
@@ -247,6 +251,7 @@ export default function ProductDetails() {
                     alt={product.name}
                     fill
                     className="object-cover"
+                    loading="lazy"
                   />
                 </div>
 
@@ -308,6 +313,6 @@ export default function ProductDetails() {
           onClose={() => setShowPopup(false)}
         />
       )}
-    </>
+    </div>
   );
 }

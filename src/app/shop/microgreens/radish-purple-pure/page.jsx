@@ -41,7 +41,7 @@ export default function RadishPurplePure() {
   ];
 
   return (
-    <>
+    <div className='w-full bg-white text-black'>
       {/* Hero */}
       <OtherHero name="Radish Purple Pure" />
 
@@ -55,6 +55,7 @@ export default function RadishPurplePure() {
               alt="Radish Purple Microgreens"
               fill
               className="object-cover"
+              loading="lazy"
             />
           </div>
 
@@ -161,6 +162,7 @@ export default function RadishPurplePure() {
                 alt="Radish Purple Microgreens Closeup"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
             <div className="relative w-full h-40 rounded-lg overflow-hidden shadow-md">
@@ -169,6 +171,7 @@ export default function RadishPurplePure() {
                 alt="Radish Purple Microgreens on Dish"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
             <div className="relative w-full h-40 rounded-lg overflow-hidden shadow-md">
@@ -177,6 +180,7 @@ export default function RadishPurplePure() {
                 alt="Radish Purple Microgreens Garnish"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
           </div>
@@ -200,6 +204,7 @@ export default function RadishPurplePure() {
                     alt={product.name}
                     fill
                     className="object-cover"
+                    loading="lazy"
                   />
                 </div>
 
@@ -255,6 +260,6 @@ export default function RadishPurplePure() {
           onClose={() => setShowPopup(false)}
         />
       )}
-    </>
+    </div>
   );
 }

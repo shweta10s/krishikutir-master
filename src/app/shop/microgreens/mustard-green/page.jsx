@@ -43,7 +43,7 @@ const ProductDetails = () => {
   ]
 
   return (
-    <>
+    <div className='w-full bg-white text-black'>
       {/* Hero */}
       <OtherHero name="Mustard Green" />
 
@@ -57,6 +57,7 @@ const ProductDetails = () => {
               alt="Green Mustard Microgreens"
               fill
               className="object-cover"
+              loading="lazy"
             />
           </div>
 
@@ -166,6 +167,7 @@ const ProductDetails = () => {
                 alt="Green Mustard Microgreens Closeup"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
             <div className="relative w-full h-40 rounded-lg overflow-hidden shadow-md">
@@ -174,6 +176,7 @@ const ProductDetails = () => {
                 alt="Green Mustard Microgreens on Dish"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
             <div className="relative w-full h-40 rounded-lg overflow-hidden shadow-md">
@@ -182,6 +185,7 @@ const ProductDetails = () => {
                 alt="Green Mustard Microgreens Garnish"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
           </div>
@@ -205,6 +209,7 @@ const ProductDetails = () => {
                     alt={product.name}
                     fill
                     className="object-cover"
+                    loading="lazy"
                   />
                 </div>
 
@@ -260,7 +265,7 @@ const ProductDetails = () => {
           onClose={() => setShowPopup(false)}
         />
       )}
-    </>
+    </div>
   )
 }
 

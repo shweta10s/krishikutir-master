@@ -40,7 +40,7 @@ const Page = () => {
       <Toaster position="top-right" reverseOrder={false} />
 
       {/* Contact Info */}
-      <div className="max-w-7xl mx-auto my-10 px-4 sm:px-6 lg:px-8 grid gap-6 sm:grid-cols-1 md:grid-cols-3">
+      <div className="max-w-7xl mx-auto bg-white py-10 px-4 sm:px-6 lg:px-8 grid gap-6 sm:grid-cols-1 md:grid-cols-3">
         <a
           href="https://maps.app.goo.gl/dRx7xpRkx6SAsrA68"
           target="_blank"
@@ -84,7 +84,8 @@ const Page = () => {
       </div>
 
       {/* Contact Form */}
-      <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+     <div className='bg-white w-full'>
+       <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white">
         <div className="text-center mb-8">
           <p className="text-[#4d7c0f] italic text-lg">~ Contact Us ~</p>
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
@@ -120,21 +121,21 @@ const Page = () => {
           {/* Email + Phone */}
           <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label className="block mb-2 font-medium text-gray-700">Email</label>
+              <label className="block mb-2 font-medium text-gray-700">Email Address</label>
               <input
                 type="email"
                 name="email"
-                placeholder="example@gmail.com"
+                placeholder="Enter your email address"
                 className="w-full p-3 bg-gray-100 rounded focus:outline-none text-sm sm:text-xs md:text-sm"
                 required
               />
             </div>
             <div>
-              <label className="block mb-2 font-medium text-gray-700">Phone</label>
+              <label className="block mb-2 font-medium text-gray-700">Phone Number</label>
               <input
                 type="tel"
                 name="phone"
-                placeholder="9876543210"
+                placeholder="Enter your phone number"
                 className="w-full p-3 bg-gray-100 rounded focus:outline-none text-sm sm:text-xs md:text-sm"
                 required
               />
@@ -152,8 +153,10 @@ const Page = () => {
           </div>
         </form>
       </section>
+     </div>
 
       {/* Google Map */}
+      <div className='bg-white w-full'>
       <section className="max-w-7xl mx-auto h-[300px] sm:h-[250px] md:h-[400px] px-4 rounded-lg">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.5190010401698!2d77.34579927387578!3d23.296921006037234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c676584cd265f%3A0x1963109d020fe57e!2sOrchard%20Majesty%20%7C%20Luxury%203%20BHK%20Villas%20In%20Bhopal%20%7C%20Premium%20Bungalow%20In%20Bhopal%20%7C%20Swadesh%20Group!5e0!3m2!1sen!2sin!4v1755777280622!5m2!1sen!2sin"
@@ -166,6 +169,7 @@ const Page = () => {
           className="rounded-lg"
         ></iframe>
       </section>
+      </div>
     </>
   );
 };

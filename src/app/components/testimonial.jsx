@@ -47,7 +47,7 @@ const testimonials = [
 
 export default function Testimonial() {
   return (
-    <section className="max-w-7xl mx-auto mt-20 text-center px-4">
+    <section className="max-w-7xl mx-auto bg-white pt-10 text-center px-4">
       {/* Header */}
       <p className="text-[#4d7c0f] italic mb-2 text-[20px] sm:text-[24px] font-medium">
         ~ Testimonials ~

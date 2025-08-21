@@ -22,7 +22,7 @@ const ProductDetails = () => {
       image: '/product/Pak-choi-green.png',
       sizes: ['100g'],
     },
-    { 
+    {
       name: 'Radish Silk Red',
       slug: 'radish-silk-red',
       price: '₹270',
@@ -41,7 +41,7 @@ const ProductDetails = () => {
   ]
 
   return (
-    <>
+    <div className='w-full bg-white text-black'>
       {/* Hero */}
       <OtherHero name="Peas" />
 
@@ -55,6 +55,7 @@ const ProductDetails = () => {
               alt="Pea Shoot Microgreens"
               fill
               className="object-cover"
+              loading="lazy"
             />
           </div>
 
@@ -161,6 +162,7 @@ const ProductDetails = () => {
                 alt="Pea Shoot Microgreens Closeup"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
             <div className="relative w-full h-40 rounded-lg overflow-hidden shadow-md">
@@ -169,6 +171,7 @@ const ProductDetails = () => {
                 alt="Pea Shoot Microgreens in Salad"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
             <div className="relative w-full h-40 rounded-lg overflow-hidden shadow-md">
@@ -177,6 +180,7 @@ const ProductDetails = () => {
                 alt="Pea Shoot Microgreens Garnish"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
           </div>
@@ -200,6 +204,7 @@ const ProductDetails = () => {
                     alt={product.name}
                     fill
                     className="object-cover"
+                    loading="lazy"
                   />
                 </div>
 
@@ -252,7 +257,7 @@ const ProductDetails = () => {
       {showPopup && (
         <ProductPopup onClose={() => setShowPopup(false)} product="Pea Shoot Microgreens" />
       )}
-    </>
+    </div>
   )
 }
 

@@ -20,7 +20,8 @@ export default function OurTeam() {
   ];
 
   return (
-    <section className="py-12 md:py-20 max-w-6xl mx-auto px-4">
+    <div className='bg-white w-full'>
+      <section className="py-12 md:py-10 max-w-6xl mx-auto px-4">
       {/* Header */}
       <div className="text-center mb-12">
         <p className="text-[#4d7c0f] italic mb-2 text-xl font-medium">~ Our Team ~</p>
@@ -64,5 +65,6 @@ export default function OurTeam() {
         ))}
       </div>
     </section>
+    </div>
   );
 }

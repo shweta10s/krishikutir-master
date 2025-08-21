@@ -18,14 +18,14 @@ export default function RadishWhite() {
   ];
 
   return (
-    <>
+    <div className='w-full bg-white text-black'>
       <OtherHero name="Radish White" />
 
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-12">
         {/* Product Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-12 items-center">
           <div className="relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-lg">
-            <Image src="/product/Radish-white.png" alt="Radish White Microgreens" fill className="object-cover" />
+            <Image src="/product/Radish-white.png" alt="Radish White Microgreens" fill className="object-cover" loading="lazy"/>
           </div>
 
           <div>
@@ -104,7 +104,7 @@ export default function RadishWhite() {
               { src: 'https://images.unsplash.com/photo-1556800735-8b2031092b4c?w=500&q=80', alt: 'Cooking' },
             ].map((img, i) => (
               <div key={i} className="relative w-full h-40 rounded-lg overflow-hidden shadow-md">
-                <Image src={img.src} alt={img.alt} fill className="object-cover" />
+                <Image src={img.src} alt={img.alt} fill className="object-cover" loading="lazy"/>
               </div>
             ))}
           </div>
@@ -117,7 +117,7 @@ export default function RadishWhite() {
             {recommendedProducts.map((product, index) => (
               <div key={index} className="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-5 flex flex-col">
                 <div className="relative w-full h-44 mb-4 rounded-xl overflow-hidden">
-                  <Image src={product.image} alt={product.name} fill className="object-cover" />
+                  <Image src={product.image} alt={product.name} fill className="object-cover" loading="lazy"/>
                 </div>
 
                 <div className="flex justify-between items-center">
@@ -148,6 +148,6 @@ export default function RadishWhite() {
       </div>
 
       {showPopup && <ProductPopup product="Radish White Microgreen" onClose={() => setShowPopup(false)} />}
-    </>
+    </div>
   );
 }

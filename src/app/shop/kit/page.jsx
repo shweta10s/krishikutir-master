@@ -26,6 +26,7 @@ export default function MicrogreenKitPage() {
               alt={kit.name}
               fill
               className="object-cover rounded-lg"
+              loading="lazy"
             />
           </div>
 

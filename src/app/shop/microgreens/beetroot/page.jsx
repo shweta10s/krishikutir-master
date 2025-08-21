@@ -22,7 +22,7 @@ const ProductDetails = () => {
   ]
 
   return (
-    <>
+    <div className='w-full bg-white text-black'>
       {/* Hero */}
       <OtherHero name="Beetroot Microgreens" />
 
@@ -36,6 +36,7 @@ const ProductDetails = () => {
               alt="Beetroot Microgreens"
               fill
               className="object-cover"
+              loading="lazy"
             />
           </div>
 
@@ -142,7 +143,7 @@ const ProductDetails = () => {
               { src: 'https://images.unsplash.com/photo-1623062741521-38f820bbfba7?w=500&q=80', alt: 'Beetroot Microgreens Garnish' },
             ].map((img, i) => (
               <div key={i} className="relative w-full h-40 rounded-lg overflow-hidden shadow-md">
-                <Image src={img.src} alt={img.alt} fill className="object-cover" />
+                <Image src={img.src} alt={img.alt} fill className="object-cover" loading="lazy"/>
               </div>
             ))}
           </div>
@@ -155,7 +156,7 @@ const ProductDetails = () => {
             {recommendedProducts.map((product, index) => (
               <div key={index} className="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-5 flex flex-col">
                 <div className="relative w-full h-44 mb-4 rounded-xl overflow-hidden">
-                  <Image src={product.image} alt={product.name} fill className="object-cover" />
+                  <Image src={product.image} alt={product.name} fill className="object-cover" loading="lazy"/>
                 </div>
 
                 <div className="flex justify-between items-center">
@@ -192,7 +193,7 @@ const ProductDetails = () => {
           onClose={() => setShowPopup(false)}
         />
       )}
-    </>
+    </div>
   )
 }
 

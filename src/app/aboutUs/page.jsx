@@ -10,12 +10,12 @@ const Page = () => {
     <>
       <OtherHero name="About Us" />
 
-      <div className="mt-10">
+      <div className="">
         <About />
       </div>
 
       {/* ✅ Stats Section */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 md:px-6 py-12">
+      <div className="max-w-7xl mx-auto bg-white grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 md:px-6 py-12">
         <div className="py-10 shadow-lg rounded-md bg-[#679f1d] text-white flex flex-col items-center text-center">
           <h1 className="text-3xl md:text-4xl font-bold">300+</h1>
           <p className="text-lg">Satisfied Clients</p>

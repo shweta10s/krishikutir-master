@@ -178,7 +178,7 @@ const MicrogreenTraining = () => {
     {/* Email */}
     <div>
       <label className="block text-sm font-medium text-gray-700 mb-1">
-        Email
+        Email Address
       </label>
       <input
         type="email"

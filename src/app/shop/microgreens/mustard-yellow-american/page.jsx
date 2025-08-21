@@ -41,7 +41,7 @@ export default function MustardYellowAmerican() {
   ];
 
   return (
-    <>
+    <div className='w-full bg-white text-black'>
       {/* Hero */}
       <OtherHero name="Mustard Yellow American" />
 
@@ -55,6 +55,7 @@ export default function MustardYellowAmerican() {
               alt="Mustard Yellow American Microgreens"
               fill
               className="object-cover"
+              loading="lazy"
             />
           </div>
 
@@ -147,6 +148,7 @@ export default function MustardYellowAmerican() {
                 alt="Mustard Yellow Microgreens Fresh"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
             <div className="relative w-full h-40 rounded-lg overflow-hidden shadow-md">
@@ -155,6 +157,7 @@ export default function MustardYellowAmerican() {
                 alt="Mustard Yellow Microgreens Dish"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
             <div className="relative w-full h-40 rounded-lg overflow-hidden shadow-md">
@@ -163,6 +166,7 @@ export default function MustardYellowAmerican() {
                 alt="Mustard Yellow Microgreens Cooking"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
           </div>
@@ -186,6 +190,7 @@ export default function MustardYellowAmerican() {
                     alt={product.name}
                     fill
                     className="object-cover"
+                    loading="lazy"
                   />
                 </div>
 
@@ -241,6 +246,6 @@ export default function MustardYellowAmerican() {
           onClose={() => setShowPopup(false)}
         />
       )}
-    </>
+    </div>
   );
 }

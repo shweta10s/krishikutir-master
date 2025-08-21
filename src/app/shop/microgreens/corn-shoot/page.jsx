@@ -22,7 +22,7 @@ export default function CornShootMicrogreens() {
   ];
 
   return (
-    <>
+    <div className='w-full bg-white text-black'>
       {/* Hero */}
       <OtherHero name="Corn Shoot" />
 
@@ -36,6 +36,7 @@ export default function CornShootMicrogreens() {
               alt="Corn Shoot Microgreens"
               fill
               className="object-cover"
+              loading="lazy"
             />
           </div>
 
@@ -126,6 +127,7 @@ export default function CornShootMicrogreens() {
                 alt="Corn Shoot Microgreens Fresh"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
             <div className="relative w-full h-40 rounded-lg overflow-hidden shadow-md">
@@ -134,6 +136,7 @@ export default function CornShootMicrogreens() {
                 alt="Corn Shoot Microgreens Salad"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
             <div className="relative w-full h-40 rounded-lg overflow-hidden shadow-md">
@@ -142,6 +145,7 @@ export default function CornShootMicrogreens() {
                 alt="Corn Shoot Microgreens Dish"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
           </div>
@@ -154,7 +158,7 @@ export default function CornShootMicrogreens() {
             {recommendedProducts.map((product, index) => (
               <div key={index} className="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-5 flex flex-col">
                 <div className="relative w-full h-44 mb-4 rounded-xl overflow-hidden">
-                  <Image src={product.image} alt={product.name} fill className="object-cover" />
+                  <Image src={product.image} alt={product.name} fill className="object-cover" loading="lazy"/>
                 </div>
 
                 <div className="flex justify-between items-center">
@@ -191,6 +195,6 @@ export default function CornShootMicrogreens() {
           onClose={() => setShowPopup(false)}
         />
       )}
-    </>
+    </div>
   );
 }

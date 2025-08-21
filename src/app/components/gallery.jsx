@@ -35,7 +35,7 @@ const Gallery = () => {
 
   return (
     <div>
-      <div className="gallery py-12 mt-16 max-w-7xl mx-auto px-4">
+      <div className="gallery py-20 bg-white max-w-7xl mx-auto px-4">
         <p className="text-[#4d7c0f] italic mb-2 text-base sm:text-lg md:text-xl font-[400] text-center">
           ~ From our Events ~
         </p>

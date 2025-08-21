@@ -3,7 +3,8 @@ import React from "react";
 
 const Divider = () => {
   return (
-    <section className="relative w-full min-h-[60vh] mt-10 overflow-hidden">
+  <div className="w-full bg-white py-10">
+      <section className="relative w-full min-h-[60vh] overflow-hidden">
       {/* Background */}
       <img
         src="/background/image-1.jpg"
@@ -43,6 +44,7 @@ const Divider = () => {
         </div>
       </div>
     </section>
+  </div>
   );
 };
 

@@ -41,7 +41,7 @@ export default function PakChoiGreen() {
   ];
 
   return (
-    <>
+    <div className='w-full bg-white text-black'>
       {/* Hero */}
       <OtherHero name="Pak Choi Green" />
 
@@ -55,6 +55,7 @@ export default function PakChoiGreen() {
               alt="Pak Choi Green Microgreens"
               fill
               className="object-cover"
+              loading="lazy"
             />
           </div>
 
@@ -151,6 +152,7 @@ export default function PakChoiGreen() {
                 alt="Pak Choi Microgreens Fresh"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
             <div className="relative w-full h-40 rounded-lg overflow-hidden shadow-md">
@@ -159,6 +161,7 @@ export default function PakChoiGreen() {
                 alt="Pak Choi Microgreens Dish"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
             <div className="relative w-full h-40 rounded-lg overflow-hidden shadow-md">
@@ -167,6 +170,7 @@ export default function PakChoiGreen() {
                 alt="Pak Choi Microgreens Cooking"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
           </div>
@@ -190,6 +194,7 @@ export default function PakChoiGreen() {
                     alt={product.name}
                     fill
                     className="object-cover"
+                    loading="lazy"
                   />
                 </div>
 
@@ -245,6 +250,6 @@ export default function PakChoiGreen() {
           onClose={() => setShowPopup(false)}
         />
       )}
-    </>
+    </div>
   );
 }

@@ -77,6 +77,7 @@ export default function WhyChoose() {
                 width={500}
                 height={300}
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
 
@@ -89,6 +90,7 @@ export default function WhyChoose() {
                   width={250}
                   height={180}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
               <div className="rounded-lg overflow-hidden shadow-md h-[120px] sm:h-[150px]">
@@ -98,6 +100,7 @@ export default function WhyChoose() {
                   width={250}
                   height={180}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
             </div>

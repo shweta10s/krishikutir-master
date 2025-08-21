@@ -105,7 +105,7 @@ const PopupForm = () => {
                   <input
                     type="email"
                     name="email"
-                    placeholder="example@gmail.com"
+                    placeholder="Enter your email address"
                     className="p-2 sm:p-3 bg-gray-100 text-gray-700 rounded focus:outline-none"
                     required
                   />
@@ -117,7 +117,7 @@ const PopupForm = () => {
                   <input
                     type="tel"
                     name="phone"
-                    placeholder="9876543210"
+                    placeholder="Enter you phone number"
                     className="p-2 sm:p-3 bg-gray-100 text-gray-700 rounded focus:outline-none"
                     required
                   />

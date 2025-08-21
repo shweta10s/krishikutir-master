@@ -38,7 +38,7 @@ export default function SpinachMicrogreens() {
   ];
 
   return (
-    <>
+    <div className='w-full bg-white text-black'>
       {/* Hero */}
       <OtherHero name="Spinach" />
 
@@ -52,6 +52,7 @@ export default function SpinachMicrogreens() {
               alt="Spinach Microgreens"
               fill
               className="object-cover"
+              loading="lazy"
             />
           </div>
 
@@ -162,6 +163,7 @@ export default function SpinachMicrogreens() {
                 alt="Spinach Microgreens Fresh"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
             <div className="relative w-full h-40 rounded-lg overflow-hidden shadow-md">
@@ -170,6 +172,7 @@ export default function SpinachMicrogreens() {
                 alt="Spinach Microgreens on Dish"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
             <div className="relative w-full h-40 rounded-lg overflow-hidden shadow-md">
@@ -178,6 +181,7 @@ export default function SpinachMicrogreens() {
                 alt="Spinach Microgreens Closeup"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
           </div>
@@ -201,6 +205,7 @@ export default function SpinachMicrogreens() {
                     alt={product.name}
                     fill
                     className="object-cover"
+                    loading="lazy"
                   />
                 </div>
 
@@ -256,6 +261,6 @@ export default function SpinachMicrogreens() {
           onClose={() => setShowPopup(false)}
         />
       )}
-    </>
+    </div>
   );
 }

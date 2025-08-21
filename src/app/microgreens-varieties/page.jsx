@@ -187,7 +187,7 @@ const products = [
 
 export default function MicrogreensVarieties() {
   return (
-    <section className="mt-20 py-12 px-4 flex justify-center text-black">
+    <section className="pt-40 py-12 px-4 flex justify-center text-black bg-white">
       <div className="relative max-w-7xl w-full">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-green-800 mb-10">
           Our Microgreens Collection
@@ -205,6 +205,7 @@ export default function MicrogreensVarieties() {
                   alt={item.name}
                   fill
                   className="object-cover rounded-lg"
+                  loading="lazy"
                 />
               </div>
 

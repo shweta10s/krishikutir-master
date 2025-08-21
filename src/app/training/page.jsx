@@ -66,7 +66,7 @@ const Page = () => {
       {/* <Toaster position="top-center" reverseOrder={false} /> */}
 
       {/* Hero Section */}
-      <div className="max-w-7xl mx-auto min-h-[50vh] text-[#000] mt-10 px-4 flex flex-col md:flex-row items-center gap-8 md:gap-12">
+      <div className="max-w-7xl mx-auto bg-white min-h-[50vh] text-[#000] pt-10 px-4 flex flex-col md:flex-row items-center gap-8 md:gap-12">
         <div className="w-full md:w-1/2 flex flex-col justify-center gap-4 text-center md:text-left">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-snug">
             Launch Your Microgreens Business Today!
@@ -92,7 +92,7 @@ const Page = () => {
       </div>
 
       {/* Courses Section */}
-      <section className="py-12 px-4 md:px-12">
+      <section className="py-12 px-4 md:px-12 bg-white">
         <div className="max-w-7xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {courses.map((course, index) => (
             <div
@@ -196,6 +196,7 @@ const Page = () => {
                   type="text"
                   name="entry.676540564"
                   value={selectedTraining}
+                  
                   readOnly
                   className="w-full border rounded-lg px-3 py-2 mt-1 bg-gray-100"
                 />
@@ -224,7 +225,7 @@ const Page = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium">Phone</label>
+                <label className="block text-sm font-medium">Phone Number</label>
                 <input
                   type="tel"
                   name="entry.824814810"
