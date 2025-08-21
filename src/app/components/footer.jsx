@@ -108,7 +108,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="absolute top-full left-0 mt-0 bg-white border border-gray-200 shadow-lg rounded-md w-44 p-2 hidden group-hover:block z-50">
-          <Link href="/shop/kit" className="block px-3 py-1 text-gray-700 hover:bg-gray-100 rounded">
+          <Link href="/" className="block px-3 py-1 text-gray-700 hover:bg-gray-100 rounded">
             Kit
           </Link>
           <Link href="/shop/microgreens" className="block px-3 py-1 text-gray-700 hover:bg-gray-100 rounded">

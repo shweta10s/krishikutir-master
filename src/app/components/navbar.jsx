@@ -75,7 +75,7 @@ const Navbar = () => {
             </div>
             <ul className="absolute top-8 left-0 bg-[#fef7e6] text-[#333] shadow-lg rounded-md hidden group-hover:block min-w-[180px] -mt-4 z-60">
               <li className="px-4 py-2 hover:bg-[#e2f0c9]">
-                <Link href="/shop/kit/">Kit</Link>
+                <Link href="/">Kit</Link>
               </li>
               <li className="px-4 py-2 hover:bg-[#e2f0c9]">
                 <Link href="/shop/microgreens/">Microgreens</Link>
@@ -139,7 +139,7 @@ const Navbar = () => {
               {isShopDropdownOpen && (
                 <ul className="ml-4 mt-2">
                   <li className="py-1">
-                    <Link href="/shop/kit/" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#4d7c0f]">Kit</Link>
+                    <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#4d7c0f]">Kit</Link>
                   </li>
                   <li className="py-1">
                     <Link href="/shop/microgreens/" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#4d7c0f]">Microgreens</Link>

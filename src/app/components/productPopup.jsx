@@ -57,7 +57,7 @@ const ProductPopup = ({ product, onClose }) => {
         </button>
 
         {/* Heading */}
-        <h2 className="text-2xl font-bold text-green-700 mb-6 text-center">
+        <h2 className="text-2xl font-bold text-[#4d7c0f] mb-6 text-center">
           Order Product
         </h2>
 
@@ -113,7 +113,7 @@ const ProductPopup = ({ product, onClose }) => {
           {/* Submit */}
           <button
             type="submit"
-            className="w-full bg-green-600 text-white py-3 rounded-xl font-semibold text-lg shadow-md hover:bg-green-700 transition duration-300"
+            className="w-full bg-[#4d7c0f] hover:bg-[#3f670d] text-white py-3 rounded-xl font-semibold text-lg shadow-md transition duration-300"
           >
             Submit
           </button>

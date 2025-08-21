@@ -5,19 +5,19 @@ import { useState } from 'react';
 
 const categories = {
   "Our Events": [
-    "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=800&q=80",
-    "https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=800&q=80",
-    "https://images.unsplash.com/photo-1497493292307-31c376b6e479?w=800&q=80",
+    '/product/Basil-green.png',
+  '/product/Beetroot.png',
+  '/product/Mustard-green.png',
   ],
   "Our Farms": [
-    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&q=80",
-    "https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?w=800&q=80",
-    "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=800&q=80",
+    '/product/Pak-choi-green.png',
+  '/product/Mustard-yellow.png',
+  '/product/Cabbage.png',
   ],
   "Our Exhibition": [
-    "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=80",
-    "https://images.unsplash.com/photo-1522202757859-7472b0974e02?w=800&q=80",
-    "https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa?w=800&q=80",
+    '/product/Red-amaranth.png',
+  '/product/Radish-white.png',
+  '/product/Turnip-green.png',
   ],
 };
 

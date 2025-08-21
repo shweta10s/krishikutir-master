@@ -7,14 +7,14 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { RiCloseLine } from "react-icons/ri";
 
 const images = [
-  '/gallery/IMG_8110.JPG',
-  '/gallery/IMG_8490.JPG',
-  '/gallery/IMG_8981.JPG',
-  '/gallery/IMG_8364.jpg',
-  '/gallery/IMG_8110.JPG',
-  '/gallery/IMG_8490.JPG',
-  '/gallery/IMG_8981.JPG',
-  '/gallery/IMG_8364.jpg', // last one = "See More"
+  '/product/Basil-green.png',
+  '/product/Beetroot.png',
+  '/product/Mustard-green.png',
+  '/product/Pak-choi-green.png',
+  '/product/Mustard-yellow.png',
+  '/product/Cabbage.png',
+  '/product/Red-amaranth.png',
+  '/product/Radish-white.png', // last one = "See More"
 ];
 
 const Gallery = () => {
@@ -61,7 +61,7 @@ const Gallery = () => {
                     alt="See more"
                   />
                   <div className="absolute inset-0 flex justify-center items-center">
-                    <span className="text-white text-lg md:text-xl font-semibold bg-black bg-opacity-50 px-4 py-2 rounded-lg">
+                    <span className="text-black text-lg md:text-xl font-semibold bg-opacity-50 px-4 py-2 rounded-lg">
                       See More →
                     </span>
                   </div>

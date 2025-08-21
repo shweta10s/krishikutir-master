@@ -12,7 +12,7 @@ export default function Services() {
       bgColor: 'bg-yellow-100',
     },
     {
-      href: '/shop/kit',
+      href: '/',
       title: 'Microgreens Kit',
       description:
         'Start growing your own microgreens at home with our easy-to-use kit.',
