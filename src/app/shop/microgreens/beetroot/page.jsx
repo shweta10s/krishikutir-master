@@ -2,9 +2,9 @@
 
 import React, { useState } from 'react'
 import Image from 'next/image'
-import OtherHero from '@/app/components/other-hero'
-import ProductPopup from '@/app/components/ProductPopup' // ✅ Import popup
+import OtherHero from '@/app/components/other-hero'// ✅ Import popup
 import Link from 'next/link' // ✅ Needed for Link component
+import ProductPopup from '@/app/components/productPopup'
 
 const ProductDetails = () => {
   const [showPopup, setShowPopup] = useState(false)

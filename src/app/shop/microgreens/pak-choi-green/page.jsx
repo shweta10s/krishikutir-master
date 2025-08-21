@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import OtherHero from '@/app/components/other-hero';
-import ProductPopup from '@/app/components/ProductPopup'; // ✅ Import popup
+import ProductPopup from '@/app/components/productPopup'; // ✅ Import popup
 import Link from 'next/link';
 
 export default function PakChoiGreen() {

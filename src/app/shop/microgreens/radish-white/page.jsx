@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import OtherHero from '@/app/components/other-hero';
 import Link from 'next/link';
-import ProductPopup from '@/app/components/ProductPopup';
+import ProductPopup from '@/app/components/productPopup';
 
 export default function RadishWhite() {
   const [showPopup, setShowPopup] = useState(false);

@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import OtherHero from '@/app/components/other-hero';
-import ProductPopup from '@/app/components/ProductPopup'; // import your popup form
+import ProductPopup from '@/app/components/productPopup'; // import your popup form
 import Link from 'next/link';
 
 export default function ProductDetails() {

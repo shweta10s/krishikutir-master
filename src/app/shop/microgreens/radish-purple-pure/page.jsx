@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import OtherHero from '@/app/components/other-hero';
-import ProductPopup from '@/app/components/ProductPopup'; // ⬅️ Import your popup form
+import ProductPopup from '@/app/components/productPopup'; // ⬅️ Import your popup form
 
 export default function RadishPurplePure() {
   const [showPopup, setShowPopup] = useState(false);

@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import OtherHero from '@/app/components/other-hero';
 import Link from 'next/link';
-import ProductPopup from '@/app/components/ProductPopup'; // ✅ Import popup
+import ProductPopup from '@/app/components/productPopup'; // ✅ Import popup
 
 export default function MustardYellowAmerican() {
   const [showPopup, setShowPopup] = useState(false);

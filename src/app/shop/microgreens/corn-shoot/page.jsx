@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import OtherHero from '@/app/components/other-hero';
 import Link from 'next/link';
-import ProductPopup from '@/app/components/ProductPopup'; // import your popup
+import ProductPopup from '@/app/components/productPopup'; // import your popup
 
 export default function CornShootMicrogreens() {
   const [showPopup, setShowPopup] = useState(false);
