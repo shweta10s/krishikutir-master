@@ -49,19 +49,19 @@ export default function Blog03() {
       </Head>
 
       {/* Hero Section */}
-      <section className="bg-[#e6f4e8] py-10 shadow-md">
+      <section className="bg-green-50 py-10 shadow-md">
         <div className="max-w-4xl mx-auto text-center px-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-green-700 mb-4">
-            🌱 How to Grow Microgreens at Home – A Simple DIY Guide
+          <h1 className="text-3xl md:text-4xl font-bold text-[#4d7c0f] mb-4">
+            How to Grow Microgreens at Home – A Simple DIY Guide
           </h1>
-          <p className="text-gray-700 text-lg md:text-xl max-w-2xl mx-auto">
-            Microgreens are becoming a superfood trend worldwide, and for good reason. These tiny greens are packed with vitamins, minerals, and antioxidants, making them a powerhouse addition to your diet.
-          </p>
         </div>
       </section>
 
       {/* Main Content */}
       <main className="max-w-5xl mx-auto px-4 py-12 space-y-12 text-gray-700">
+          <p className="text-gray-700 text-lg md:text-xl max-w-2xl mx-auto text-center">
+            Microgreens are becoming a superfood trend worldwide, and for good reason. These tiny greens are packed with vitamins, minerals, and antioxidants, making them a powerhouse addition to your diet.
+          </p>
         {/* Featured Image */}
         <div className="relative rounded-lg overflow-hidden shadow-lg md:h-[280px] max-md:h-[160px]">
           <Image

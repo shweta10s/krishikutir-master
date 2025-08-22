@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <nav className="w-full fixed top-0 left-0 bg-[#fef7e6] shadow-md z-50 h-[90px] flex items-center">
       <div className="max-w-7xl w-full mx-auto flex items-center justify-between px-4 md:px-8">
-        
+
         {/* Logo */}
         <Link href="/">
 
@@ -35,9 +35,8 @@ const Navbar = () => {
           <li>
             <Link
               href="/"
-              className={`transition-colors duration-200 ${
-                isActive('/') ? 'text-[#4d7c0f]' : 'text-[#333]'
-              } hover:text-[#4d7c0f]`}
+              className={`transition-colors duration-200 ${isActive('/') ? 'text-[#4d7c0f]' : 'text-[#333]'
+                } hover:text-[#4d7c0f]`}
             >
               Home
             </Link>
@@ -45,9 +44,8 @@ const Navbar = () => {
           <li>
             <Link
               href="/aboutUs"
-              className={`transition-colors duration-200 ${
-                isActive('/aboutUs') ? 'text-[#4d7c0f]' : 'text-[#333]'
-              } hover:text-[#4d7c0f]`}
+              className={`transition-colors duration-200 ${isActive('/aboutUs') ? 'text-[#4d7c0f]' : 'text-[#333]'
+                } hover:text-[#4d7c0f]`}
             >
               About Us
             </Link>
@@ -55,9 +53,8 @@ const Navbar = () => {
           <li>
             <Link
               href="/training"
-              className={`transition-colors duration-200 ${
-                isActive('/training') ? 'text-[#4d7c0f]' : 'text-[#333]'
-              } hover:text-[#4d7c0f]`}
+              className={`transition-colors duration-200 ${isActive('/training') ? 'text-[#4d7c0f]' : 'text-[#333]'
+                } hover:text-[#4d7c0f]`}
             >
               Training
             </Link>
@@ -66,16 +63,15 @@ const Navbar = () => {
           {/* Shop Dropdown */}
           <li className="relative group cursor-pointer">
             <div
-              className={`flex items-center gap-1 transition-colors duration-200 ${
-                pathname.startsWith('/shop') ? 'text-[#4d7c0f]' : 'text-[#333]'
-              } hover:text-[#4d7c0f]`}
+              className={`flex items-center gap-1 transition-colors duration-200 ${pathname.startsWith('/shop') ? 'text-[#4d7c0f]' : 'text-[#333]'
+                } hover:text-[#4d7c0f]`}
             >
               Shop
               <IoIosArrowDown size={16} />
             </div>
             <ul className="absolute top-8 left-0 bg-[#fef7e6] text-[#333] shadow-lg rounded-md hidden group-hover:block min-w-[180px] -mt-4 z-60">
               <li className="px-4 py-2 hover:bg-[#e2f0c9]">
-                <Link href="/">Kit</Link>
+                <Link href="/shop/kit">Kit</Link>
               </li>
               <li className="px-4 py-2 hover:bg-[#e2f0c9]">
                 <Link href="/shop/microgreens/">Microgreens</Link>
@@ -85,10 +81,19 @@ const Navbar = () => {
 
           <li>
             <Link
+              href="/gallery"
+              className={`transition-colors duration-200 ${isActive('/gallery') ? 'text-[#4d7c0f]' : 'text-[#333]'
+                } hover:text-[#4d7c0f]`}
+            >
+              Gallery
+            </Link>
+          </li>
+
+          <li>
+            <Link
               href="/blog"
-              className={`transition-colors duration-200 ${
-                isActive('/blog') ? 'text-[#4d7c0f]' : 'text-[#333]'
-              } hover:text-[#4d7c0f]`}
+              className={`transition-colors duration-200 ${isActive('/blog') ? 'text-[#4d7c0f]' : 'text-[#333]'
+                } hover:text-[#4d7c0f]`}
             >
               Blog
             </Link>
@@ -139,7 +144,7 @@ const Navbar = () => {
               {isShopDropdownOpen && (
                 <ul className="ml-4 mt-2">
                   <li className="py-1">
-                    <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#4d7c0f]">Kit</Link>
+                    <Link href="/shop/kit" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#4d7c0f]">Kit</Link>
                   </li>
                   <li className="py-1">
                     <Link href="/shop/microgreens/" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#4d7c0f]">Microgreens</Link>
@@ -147,12 +152,17 @@ const Navbar = () => {
                 </ul>
               )}
             </li>
-
+            <li>
+              <Link href="/gallery" onClick={() => setIsMobileMenuOpen(false)} className={`${isActive('/gallery') ? 'text-[#4d7c0f]' : 'text-[#333]'} hover:text-[#4d7c0f]`}>
+                Gallery
+              </Link>
+            </li>
             <li>
               <Link href="/blog" onClick={() => setIsMobileMenuOpen(false)} className={`${isActive('/blog') ? 'text-[#4d7c0f]' : 'text-[#333]'} hover:text-[#4d7c0f]`}>
                 Blog
               </Link>
             </li>
+
             <li>
               <Link href="/contact">
                 <button className="bg-[#4d7c0f] text-white px-5 py-2 rounded hover:bg-[#3f670d] transition w-full mt-2">

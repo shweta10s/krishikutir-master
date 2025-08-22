@@ -7,15 +7,21 @@ const PopupForm = () => {
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowPopup(true);
-    }, 5000);
+    // Check if popup was already shown
+    const hasSeenPopup = localStorage.getItem("hasSeenPopup");
 
-    return () => clearTimeout(timer);
+    if (!hasSeenPopup) {
+      const timer = setTimeout(() => {
+        setShowPopup(true);
+        localStorage.setItem("hasSeenPopup", "true"); // mark as seen
+      }, 3000);
+
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   const handleClose = () => {
-    setShowPopup(false); 
+    setShowPopup(false);
   };
 
   const handleSubmit = async (e) => {
@@ -23,12 +29,11 @@ const PopupForm = () => {
 
     const formData = new FormData(e.target);
 
-    // Replace these entry IDs with your Google Form field IDs
     const googleFormData = new FormData();
-    googleFormData.append("entry.773888232", formData.get("firstName")); // First Name
-    googleFormData.append("entry.1502206100", formData.get("lastName"));  // Last Name
-    googleFormData.append("entry.434840260", formData.get("email"));     // Email
-    googleFormData.append("entry.155669080", formData.get("phone"));     // Phone
+    googleFormData.append("entry.773888232", formData.get("firstName"));
+    googleFormData.append("entry.1502206100", formData.get("lastName"));
+    googleFormData.append("entry.434840260", formData.get("email"));
+    googleFormData.append("entry.155669080", formData.get("phone"));
 
     try {
       await fetch(
@@ -36,7 +41,7 @@ const PopupForm = () => {
         {
           method: "POST",
           body: googleFormData,
-          mode: "no-cors", // Prevents CORS issues
+          mode: "no-cors",
         }
       );
       toast.success('Thank you! Your message has been submitted.');
@@ -53,7 +58,7 @@ const PopupForm = () => {
       {showPopup && (
         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-2 sm:p-4">
           <div className="bg-white rounded-xl w-full max-w-lg p-4 sm:p-6 md:p-8 relative shadow-xl max-h-[90vh] overflow-y-auto">
-            
+
             {/* Close Button */}
             <button
               onClick={handleClose}
@@ -117,7 +122,7 @@ const PopupForm = () => {
                   <input
                     type="tel"
                     name="phone"
-                    placeholder="Enter you phone number"
+                    placeholder="Enter your phone number"
                     className="p-2 sm:p-3 bg-gray-100 text-gray-700 rounded focus:outline-none"
                     required
                   />

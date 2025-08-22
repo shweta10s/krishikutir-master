@@ -90,7 +90,7 @@ const MicrogreenTraining = () => {
           </p>
 
           {/* Section: Why YOU Can Do This Too */}
-          <h3 className="text-2xl font-semibold text-black mt-10">Why YOU Can Do This Too</h3>
+          <h3 className="text-2xl font-semibold text-black mt-10">Why You Can Do This Too</h3>
           <p>
             No prior farming experience is required. The business needs only low investment, but it has high return potential.
             It’s flexible, home-based, and comes with full guidance and training through Krishi Kutir’s Hands-On Microgreens Workshop.

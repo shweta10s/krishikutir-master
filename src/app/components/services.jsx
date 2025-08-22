@@ -12,7 +12,7 @@ export default function Services() {
       bgColor: 'bg-yellow-100',
     },
     {
-      href: '/',
+      href: '/shop/kit',
       title: 'Microgreens Kit',
       description:
         'Start growing your own microgreens at home with our easy-to-use kit.',
@@ -75,7 +75,7 @@ export default function Services() {
             {/* Button */}
             <div className="flex justify-center">
               <Link href={service.href}>
-                <button className="bg-[#4d7c0f] text-white px-5 py-2 rounded-full hover:bg-[#3f670d] transition duration-300 text-sm sm:text-base">
+                <button className="bg-[#4d7c0f] text-white px-5 py-2 rounded-full hover:bg-[#3f670d] transition duration-300 text-sm sm:text-base cursor-pointer">
                   Enquire Now
                 </button>
               </Link>

@@ -34,101 +34,93 @@ const Footer = () => {
 
   const serviceCities = [
     'Bhopal',
+    'Ujjain',
     'Indore',
     'Dewas',
-    'Ujjain',
     'Jabalpur',
   ];
 
   return (
-    <footer className="w-full bg-[#fef7e6] pt-6 px-4 sm:px-6 md:px-8">
+    <footer className="bg-[#fef7e6] pt-10 px-6 sm:px-8 md:px-12">
       <Toaster position="top-right" reverseOrder={false} />
-      <div className="container max-w-7xl mx-auto flex flex-col gap-10">
-        {/* Logo */}
-        <div className="flex justify-center md:justify-between items-center flex-wrap gap-4 md:gap-6">
-          <Link href="/" aria-label="Go to home">
-            <div className="relative w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 mx-auto md:mx-0">
+
+      <div className="max-w-7xl mx-auto">
+        {/* Top Section */}
+        <div className="flex flex-col items-center md:items-start md:flex-row justify-between gap-6 border-b border-[#78b943]/40 pb-8">
+          <Link href="/" aria-label="Go to home" className="flex-shrink-0">
+            <div className="relative w-16 h-16 md:w-20 md:h-20">
               <Image
                 src="/logo/kk-logo.png"
                 alt="Logo"
                 fill
-                loading="lazy"
                 className="object-contain"
               />
             </div>
           </Link>
         </div>
 
-        {/* Footer Links */}
-        <div className="grid gap-8 sm:gap-10 md:gap-12 
-                        grid-cols-2 sm:grid-cols-2 md:grid-cols-4">
-
+        {/* Links Section */}
+        <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-4 mt-10">
           {/* Social Links */}
-          <div className="order-1 md:order-1 flex flex-col gap-3">
-            <h4 className="text-[#78b943] font-bold text-lg md:text-xl mb-3 border-b-2 border-[#78b943] w-fit pb-1">
+          <div>
+            <h4 className="text-[#78b943] font-bold text-lg md:text-xl mb-4 border-b-2 border-[#78b943] inline-block pb-1">
               Social Links
             </h4>
             <div className="flex flex-col gap-3 text-[#515151] text-sm md:text-base">
-              <Link href="https://www.facebook.com/share/1C9eadexh8/" className="flex items-center gap-3 hover:text-[#000]">
-                <FaFacebookF className="w-4 h-4" />
-                <span>Krishii Kutirr</span>
+              <Link href="https://www.facebook.com/share/1C9eadexh8/" className="flex items-center gap-2 hover:text-[#000]">
+                <FaFacebookF className="w-4 h-4" /> Krishii Kutirr
               </Link>
-              <Link href="https://www.instagram.com/krishikutirbhopal?igsh=cHVwNm10bG5vbzR0" className="flex items-center gap-3 hover:text-[#000]">
-                <FaInstagram className="w-4 h-4" />
-                <span>krishikutirbhopal</span>
+              <Link href="https://www.instagram.com/krishikutirbhopal?igsh=cHVwNm10bG5vbzR0" className="flex items-center gap-2 hover:text-[#000]">
+                <FaInstagram className="w-4 h-4" /> krishikutirbhopal
               </Link>
-              <Link href="https://www.linkedin.com/in/krishii-kutirr-bhopal-177b62374" className="flex items-center gap-3 hover:text-[#000]">
-                <FaLinkedinIn className="w-4 h-4" />
-                <span>Krishii Kutirr Bhopal</span>
+              <Link href="https://www.linkedin.com/in/krishii-kutirr-bhopal-177b62374" className="flex items-center gap-2 hover:text-[#000]">
+                <FaLinkedinIn className="w-4 h-4" /> Krishii Kutirr Bhopal
               </Link>
-              <Link href="https://x.com/KrishiiKutirr" className="flex items-center gap-3 hover:text-[#000]">
-                <FaSquareXTwitter className="w-4 h-4" />
-                <span>@KrishiiKutirr</span>
+              <Link href="https://x.com/KrishiiKutirr" className="flex items-center gap-2 hover:text-[#000]">
+                <FaSquareXTwitter className="w-4 h-4" /> @KrishiiKutirr
               </Link>
-              <Link href="https://youtube.com/@krishiikutirr" className="flex items-center gap-3 hover:text-[#000]">
-                <FaYoutube className="w-4 h-4" />
-                <span>KrishiiKutirr</span>
+              <Link href="https://youtube.com/@krishiikutirr" className="flex items-center gap-2 hover:text-[#000]">
+                <FaYoutube className="w-4 h-4" /> KrishiiKutirr
               </Link>
             </div>
           </div>
 
           {/* Quick Links */}
-          <div className="order-2 md:order-2 flex flex-col gap-3">
-            <h4 className="text-[#78b943] font-bold text-lg md:text-xl mb-3 border-b-2 border-[#78b943] w-fit pb-1">
+          <div>
+            <h4 className="text-[#78b943] font-bold text-lg md:text-xl mb-4 border-b-2 border-[#78b943] inline-block pb-1">
               Quick Links
             </h4>
-            <div className="flex flex-col gap-2 text-[#515151] text-sm md:text-base">
+            <div className="flex flex-col gap-3 text-[#515151] text-sm md:text-base">
               {['Home', 'About Us', 'Training'].map((link, idx) => (
                 <Link
                   key={idx}
                   href={`/${link.toLowerCase().replace(/\s+/g, '-')}`}
-                  className="hover:text-[#000] transition-colors"
+                  className="hover:text-[#000]"
                 >
                   {link}
                 </Link>
               ))}
+
               {/* Dropdown */}
               <div className="relative group">
                 <div className="flex items-center hover:text-black cursor-pointer">
-                  <div className="flex items-center transition-colors">
-                    Shop
-                    <FaChevronDown className="ml-1 text-xs" />
-                  </div>
+                  Shop <FaChevronDown className="ml-1 text-xs" />
                 </div>
-                <div className="absolute top-full left-0 mt-0 bg-white border border-gray-200 shadow-lg rounded-md w-44 p-2 hidden group-hover:block z-50">
-                  <Link href="/" className="block px-3 py-1 text-gray-700 hover:bg-gray-100 rounded">
+                <div className="absolute top-full left-0 mt-1 bg-white border border-gray-200 shadow-lg rounded-md w-44 p-2 hidden group-hover:block z-50">
+                  <Link href="/shop/kit" className="block px-3 py-1 hover:bg-gray-100 rounded">
                     Kit
                   </Link>
-                  <Link href="/shop/microgreens" className="block px-3 py-1 text-gray-700 hover:bg-gray-100 rounded">
+                  <Link href="/shop/microgreens" className="block px-3 py-1 hover:bg-gray-100 rounded">
                     Microgreens
                   </Link>
                 </div>
               </div>
-              {['Blog', 'Contact'].map((link, idx) => (
+
+              {['Gallery', 'Blog', 'Contact'].map((link, idx) => (
                 <Link
                   key={idx}
                   href={`/${link.toLowerCase().replace(/\s+/g, '-')}`}
-                  className="hover:text-[#000] transition-colors"
+                  className="hover:text-[#000]"
                 >
                   {link}
                 </Link>
@@ -137,67 +129,71 @@ const Footer = () => {
           </div>
 
           {/* Service Area */}
-          <div className="order-3 md:order-3 flex flex-col gap-3">
-            <h4 className="text-[#78b943] font-bold text-lg md:text-xl mb-3 border-b-2 border-[#78b943] w-fit pb-1">
+          <div>
+            <h4 className="text-[#78b943] font-bold text-lg md:text-xl mb-4 border-b-2 border-[#78b943] inline-block pb-1">
               Service Area
             </h4>
-            <div className="flex flex-col gap-2 text-[#515151] text-sm md:text-base">
+            <ul className="space-y-2 text-[#515151] text-sm md:text-base">
               {serviceCities.map((city, idx) => (
-                <span key={idx}>{city}</span>
+                <li key={idx}>{city}</li>
               ))}
-            </div>
+            </ul>
           </div>
 
           {/* Official Info */}
-          <div className="order-4 md:order-4 sm:col-span-1 md:col-span-1 flex flex-col gap-3 w-full">
-            <h4 className="text-[#78b943] font-bold text-lg md:text-xl mb-3 border-b-2 border-[#78b943] w-fit pb-1">
+          <div>
+            <h4 className="text-[#78b943] font-bold text-lg md:text-xl mb-4 border-b-2 border-[#78b943] inline-block pb-1">
               Official Info
             </h4>
-
-            <div className="flex flex-col gap-3 text-[#515151] text-sm md:text-base w-full">
+            <div className="flex flex-col gap-4 text-[#515151] text-sm md:text-base">
               <Link
                 href="https://maps.app.goo.gl/dRx7xpRkx6SAsrA68"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 hover:text-[#000]"
+                className="flex items-start gap-2 hover:text-[#000]"
               >
-                <FaLocationDot className="w-4 h-4 flex-shrink-0" />
-                <span>B-26, Orchard Majesty, Airport Road, 
-Asharam Square, Gandhi Nagar, Bhopal-462036</span>
+                <FaLocationDot className="w-5 h-5 mt-0.5 flex-shrink-0" />
+                <span>B-26, Orchard Majesty, Airport Road,
+                  Asharam Square, Gandhi Nagar, Bhopal-462036</span>
               </Link>
 
               <Link
-                href="mailto:Krishiikutirrbhopal@gmail.com"
-                className="flex items-center gap-3 hover:text-[#000]"
+                href="/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-2 hover:text-[#000]"
               >
-                <IoMdMail className="w-4 h-4 flex-shrink-0" />
+                <FaLocationDot className="w-5 h-5 mt-0.5 flex-shrink-0" />
+                <span>House no.247 Jasuja city, dhanvantari Nagar,
+                  Jabalpur (M.P) 482001</span>
+              </Link>
+
+              <Link href="mailto:Krishiikutirrbhopal@gmail.com" className="flex items-center gap-2 hover:text-[#000]">
+                <IoMdMail className="w-5 h-5" />
                 <span className="break-all">Krishiikutirrbhopal@gmail.com</span>
               </Link>
 
-              <Link
-                href="tel:+919009166101"
-                className="flex items-center gap-3 hover:text-[#000]"
-              >
-                <IoCall className="w-4 h-4 flex-shrink-0" />
-                <span>+91 9009166101</span>
+              <Link href="tel:+919009166101" className="flex items-center gap-2 hover:text-[#000]">
+                <IoCall className="w-5 h-5" /> <span>+91 9009166101 (Bhopal)</span>
+              </Link>
+
+              <Link href="tel:+919977428323" className="flex items-center gap-2 hover:text-[#000]">
+                <IoCall className="w-5 h-5" /> <span>+91 9977428323 (Jabalpur)</span>
               </Link>
             </div>
           </div>
-
-          
-
         </div>
-      </div>
 
-      {/* Footer Bottom */}
-      <div className="max-w-7xl mx-auto mt-6 border-t-2 border-[#78b943] py-3 md:py-4">
-        <p className="text-sm sm:text-base md:text-lg text-[#78b943] text-center">
-          &copy; {new Date().getFullYear()}{' '}
-          <Link href="/" className="font-medium hover:underline transition-colors">
-            Krishikutir
-          </Link>
-          . All rights reserved.
-        </p>
+        {/* Footer Bottom */}
+        <div className="border-t-2 border-[#78b943] mt-10 py-4 text-center">
+          <p className="text-sm md:text-base text-[#78b943]">
+            &copy; {new Date().getFullYear()}{' '}
+            <Link href="/" className="font-medium hover:underline">
+              Krishikutir
+            </Link>
+            . All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   );

@@ -130,7 +130,7 @@ const Page = () => {
                 {/* 🔹 Button: popup for 1st & 2nd, redirect for 3rd */}
                 {course.title === "Start a business" ? (
                   <Link
-                    href="/"
+                    href="/training/business"
                     className="mt-auto w-full bg-[#4d7c0f] hover:bg-[#3f670d] text-white py-2 px-4 rounded-lg font-semibold transition duration-300 text-center"
                   >
                     Go to Business Page

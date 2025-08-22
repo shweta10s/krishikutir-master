@@ -49,7 +49,7 @@ const Page = () => {
       <div className="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {blogPosts.slice(0, visibleCount).map((post, idx) => (
-            <div key={idx} className="rounded-md overflow-hidden bg-white shadow-md flex flex-col">
+            <Link  href={`/blog/${post.postId}`} key={idx} className="rounded-md overflow-hidden bg-white shadow-md flex flex-col">
               <div className="relative w-full h-60 sm:h-64 md:h-52 lg:h-56 xl:h-64">
                 <Image
                   src={post.imgSrc}
@@ -67,11 +67,11 @@ const Page = () => {
                   </h3>
                 </div>
                 <div className="flex items-center justify-between text-sm text-blue-800 font-semibold border-t pt-2 border-gray-200">
-                  <Link href={`/blog/${post.postId}`}>Read more</Link>
+                  <p>Read more</p>
                   <span>{post.postId}</span>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

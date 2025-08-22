@@ -49,19 +49,19 @@ export default function Blog01() {
       </Head>
 
       {/* Hero Section */}
-      <section className="bg-[#e6f4e8] py-10 shadow-md">
+      <section className="bg-green-50 py-10 shadow-md">
         <div className="max-w-4xl mx-auto text-center px-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-green-700 mb-4">
-            🌱 Top Benefits of Microgreens in Daily Life – The Superfood You Need
+          <h1 className="text-3xl md:text-4xl font-bold text-[#4d7c0f] mb-4">
+            Top Benefits of Microgreens in Daily Life – The Superfood You Need
           </h1>
-          <p className="text-gray-700 text-lg md:text-xl max-w-2xl mx-auto">
-            Are you looking for an easy and natural way to boost your health? Microgreens are the answer!
-          </p>
         </div>
       </section>
 
       {/* Main Content */}
       <main className="max-w-5xl mx-auto px-4 py-12 space-y-12 text-gray-700">
+         <p className="text-gray-700 text-lg md:text-xl max-w-2xl mx-auto text-center">
+            Are you looking for an easy and natural way to boost your health? Microgreens are the answer!
+          </p>
         {/* Featured Image */}
         <div className="relative rounded-lg overflow-hidden shadow-lg md:h-[280px] max-md:h-[160px]">
           <Image
@@ -75,7 +75,7 @@ export default function Blog01() {
         {/* Introduction */}
         <section className="space-y-6">
           <p>
-            Are you looking for an easy and natural way to boost your health? If yes, then microgreens are the answer! These tiny greens are not just a food trend – they are one of the most powerful superfoods you can add to your daily diet.
+            These tiny greens are not just a food trend – they are one of the most powerful superfoods you can add to your daily diet.
           </p>
           <p>
             Packed with essential nutrients, antioxidants, and minerals, microgreens can transform your meals and improve your overall well-being. Let’s explore the top benefits of microgreens in day-to-day life and how you can start including them in your routine.
